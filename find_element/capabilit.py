@@ -6,14 +6,15 @@ desired_caps = {}
 desired_caps['platformName'] = 'Android'
 # desired_caps['deviceName'] = "vivo x9"
 # desired_caps['deviceName'] = "meizu note8"
-desired_caps['deviceName'] = "vivo x23"
-# desired_caps['platformVersion'] = "8.1.0"
-desired_caps['platformVersion'] = "9.0.0"
-# desired_caps["udid"] = "5b19c02e"
+# desired_caps['deviceName'] = "vivo x23"
+desired_caps['platformVersion'] = "8.1.0"
+# desired_caps['platformVersion'] = "9.0.0"
+desired_caps["udid"] = "5b19c02e"
 # desired_caps["udid"] = "822QEDTK22RSQ"
-desired_caps["udid"] = "9c644168"
+# desired_caps["udid"] = "9c644168"
 
-desired_caps['app'] = r"F:\BaiduNetdiskDownload\kaoyan3.1.0.apk"
+desired_caps['automationName']='uiautomator2'
+desired_caps['app'] = r"E:\kaoyan3.1.0.apk"
 desired_caps['appPackage'] = "com.tal.kaoyan"
 desired_caps['appActivity'] = "com.tal.kaoyan.ui.activity.SplashActivity"
 desired_caps['noReset'] = "False"
@@ -33,7 +34,7 @@ def check_cancleBtu():
 def check_skipBtu():
     try:
         try2 = driver.find_element_by_id('com.tal.kaoyan:id/tv_skip')
-        print("Success")
+        print("Startapp Success")
     except:
         print("No skipBtu")
     else:
